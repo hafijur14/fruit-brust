@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-</head>
-<body>
-    
-</body>
-</html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- tailwind_daisy_link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font_link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+    <!-- tailwind script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              xs: "411px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lato">
+    <!-- header_start -->
+    <header class="container mx-auto lg:mt-12 px-2">
+      <nav class="" x-data="{open:false}">
+        <div
+          class="lg:bg-[#F85559] flex justify-between items-center lg:px-12 py-8 rounded-[600px]"
+        >
+          <div class="hidden lg:block">
+            <ul class="flex gap-8 text-white font-medium items-center">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="flex gap-4 items-center">
+            <img
+              class="h-[30px] w-[28px] md:h-[60px] md:w-[55px]"
+              src="./images/logo.png"
+              alt=""
+            />
+            <h2 class="lg:text-[#FFF] text-xl md:text-[40px] font-bold">
+              Fruit Burst
+            </h2>
+          </div>
+          <div>
+            <form class="hidden lg:block">
+              <label class="relative block">
+                <input
+                  class="bg-[#FFF] px-7 py-4 text-black placeholder:text-[#12121266] rounded-[50px] xl:w-[400px] focus:outline-none"
+                  type="text"
+                  placeholder="Search here"
+                />
+                <span class="absolute inset-y-0 right-4 flex items-center pr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3965 3.78947 12.4887 2.99927 10.4995 2.99927C8.51035 2.99927 6.60262 3.78947 5.19605 5.19605C3.78947 6.60262 2.99927 8.51035 2.99927 10.4995C2.99927 12.4887 3.78947 14.3965 5.19605 15.803C6.60262 17.2096 8.51035 17.9998 10.4995 17.9998C12.4887 17.9998 14.3965 17.2096 15.803 15.803Z"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </form>
+          </div>
+          <div class="lg:hidden">
+            <button
+              class="flex items-center px-3 py-2 rounded navbar-burger lg:hidden"
+              @click="open =true"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="text-white"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        </header>
+      
+            
+    </body>
+    </html>
